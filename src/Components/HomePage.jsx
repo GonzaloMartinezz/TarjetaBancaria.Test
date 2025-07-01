@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
   return (
-    <section className='d-flex align-items-center justify-content-between text-light m-0 p-0' style={{width: '50em'}}>
+    <section className='d-flex align-items-center justify-content-between text-light m-0 p-0'>
         <div className='border border-1 border-light p-5' onClick={() => console.log('aqui deberia de ir una imagen')}>
             <h1>Home Page</h1>
             <h2>Tarjeta Bancaria</h2>
