@@ -1,0 +1,18 @@
+section.container-botons{
+width: 60vw;
+}
+.contenedor-boton1{
+background-color: #60dd86;
+color: black;
+border-radius: 50px;
+}
+.contenedor-boton2{
+background-color: #339c4a;
+color: black;
+border-radius: 50px;
+}
+.contenedor-boton3{
+background-color: #60dd86;
+color: black;
+border-radius: 50px;
+}
