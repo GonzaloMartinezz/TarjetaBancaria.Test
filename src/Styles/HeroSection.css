@@ -1,0 +1,80 @@
+/* src/components/HeroSection/HeroSection.css */
+.hero-section {
+    background-color: var(--background-dark-grey); /* Fondo oscuro general */
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center;
+    gap: 40px;
+    min-height: 400px; /* Altura mínima del header */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho del contenido principal */
+    margin: 20px auto 0 auto; /* Márgenes y centrado */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el color verde no se desborde */
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    color: var(--white); /* Texto blanco para el fondo oscuro */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* El placeholder verde de la imagen */
+.hero-image-placeholder {
+    flex: 1;
+    min-width: 300px; /* Asegura que tenga un tamaño mínimo */
+    height: 250px; /* Altura fija para el placeholder */
+    background-color: var(--primary-green); /* El cuadrado verde */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    /* Puedes añadir un gradiente si quieres que se parezca más a la imagen original */
+    /* background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .hero-content,
+    .hero-image-placeholder {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .hero-image-placeholder {
+        height: 200px;
+    }
+}

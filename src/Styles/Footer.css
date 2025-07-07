@@ -1,0 +1,66 @@
+/* src/components/Footer/Footer.css */
+.app-footer {
+    background-color: #2c2c2c; /* Un gris oscuro casi negro como en TC5.PNG */
+    color: #b0b0b0; /* Texto gris claro */
+    padding: 40px 40px 20px 40px;
+    margin-top: auto; /* Para que se quede al fondo de la página */
+    width: 100%;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px; /* Asegura un ancho mínimo para las columnas */
+    max-width: 350px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-green); /* Color del logo en el footer */
+}
+
+.footer-copyright {
+    border-top: 1px solid #444; /* Línea separadora */
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #888;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .app-footer {
+        padding: 30px 20px 15px 20px;
+    }
+    .footer-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-column {
+        min-width: unset;
+        max-width: 100%;
+    }
+}

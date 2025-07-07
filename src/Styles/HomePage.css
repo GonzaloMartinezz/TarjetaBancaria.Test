@@ -1,4 +1,3 @@
-
 .home-page-container {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -8,7 +7,7 @@
 }
 
 .home-header {
-    background: linear-gradient(90deg, #F9F9F9 50%, #FF8C00 50%); /* Fondo dividido como Galicia */
+    background: linear-gradient(90deg, #F9F9F9 50%, #60dd86 50%); /* Fondo dividido como Galicia */
     padding: 60px 40px;
     display: flex;
     justify-content: space-between;
@@ -45,23 +44,23 @@
 }
 
 .primary-btn {
-    background-color: #FF8C00; /* Naranja de Galicia */
+    background-color:#60dd86; /* Naranja de Galicia */
     color: white;
 }
 
 .primary-btn:hover {
-    background-color: #e07b00;
+    background-color: #60dd86;
 }
 
 .secondary-btn {
     background-color: transparent;
-    border: 2px solid #FF8C00;
-    color: #FF8C00;
+    border: 2px solid #60dd86;
+    color: #60dd86;
 }
 
 .secondary-btn:hover {
     background-color: #fff;
-    color: #FF8C00;
+    color: #60dd86;
 }
 
 .card-display-area {

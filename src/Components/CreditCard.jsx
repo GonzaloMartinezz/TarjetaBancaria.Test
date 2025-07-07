@@ -2,9 +2,10 @@ import React from 'react';
 import '../Styles/CreditCard.css'; // Estilos globales o usa el módulo CSS
 
 // Logos de ejemplo (puedes reemplazarlos con tus propios assets)
-/* import visaLogo from './visa_logo.png'; // Asegúrate de tener estas imágenes o reemplaza con URLs */
-/* import mastercardLogo from './mastercard_logo.png'; */
-/* import galiciaLogo from './galicia_logo.png';  */// Logo de Banco Galicia
+ import'../imgs/LOGO11.PNG'; 
+ import'../imgs/LOGO12.PNG'; 
+ import'../imgs/LOGO11.PNG';  
+
 
 const CreditCard = ({ cardNumber, cardHolder, expiryDate, cardType, bankName }) => {
     // Función para formatear el número de tarjeta en grupos de 4

@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Styles/HomePage.css'
+import '../Styles/Inicio.css'
 const Inicio = () => {
   return (
     <>
