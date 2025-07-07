@@ -1,18 +1,159 @@
-section.container-botons{
-width: 60vw;
+
+.home-page-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.contenedor-boton1{
-background-color: #60dd86;
-color: black;
-border-radius: 50px;
+
+.home-header {
+    background: linear-gradient(90deg, #F9F9F9 50%, #FF8C00 50%); /* Fondo dividido como Galicia */
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px; /* Altura mínima del header */
+    gap: 40px; /* Espacio entre el texto y la tarjeta */
 }
-.contenedor-boton2{
-background-color: #339c4a;
-color: black;
-border-radius: 50px;
+
+.header-content {
+    flex: 1; /* Ocupa la mitad del espacio */
+    max-width: 500px;
 }
-.contenedor-boton3{
-background-color: #60dd86;
-color: black;
-border-radius: 50px;
+
+.header-content h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.header-buttons .btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.primary-btn {
+    background-color: #FF8C00; /* Naranja de Galicia */
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #e07b00;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #FF8C00;
+    color: #FF8C00;
+}
+
+.secondary-btn:hover {
+    background-color: #fff;
+    color: #FF8C00;
+}
+
+.card-display-area {
+    flex: 1; /* Ocupa la otra mitad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Sección de características/servicios */
+.features-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.features-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 15px;
+}
+
+
+/* Pie de página básico */
+.home-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Para que se fije al final si el contenido es corto */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .home-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .header-content,
+    .card-display-area {
+        max-width: 100%;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-buttons .btn {
+        margin-right: 0;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header h1 {
+        font-size: 2.2em;
+    }
+    .header-content p {
+        font-size: 1em;
+    }
 }

@@ -6,11 +6,10 @@ import LogIn from './Components/LogIn'
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
-    <HomePage />
-    <LogIn />
-    </>
+ return (
+    <div className="App">
+      <HomePage />
+    </div>
   )
 }
 

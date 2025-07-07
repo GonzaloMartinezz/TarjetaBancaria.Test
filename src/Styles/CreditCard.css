@@ -1,0 +1,115 @@
+ /* src/components/CreditCard/CreditCard.css */
+
+.credit-card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.credit-card {
+    width: 320px; /* Tamaño típico de una tarjeta */
+    height: 200px;
+    background: linear-gradient(135deg, #6c7bff, #8d5bff); /* Fondo degradado suave */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden; /* Para las "ondas" o elementos de diseño */
+}
+
+/* Efectos visuales sutiles (ondas/patrones) */
+.credit-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.credit-card::after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    right: -70px;
+    width: 180%;
+    height: 180%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    z-index: 0;
+}
+
+/* Estilos de los logos */
+.bank-logo {
+    height: 30px; /* Ajusta según el tamaño de tu logo de banco */
+    filter: brightness(0) invert(1); /* Para logos blancos si el fondo es oscuro */
+    z-index: 1; /* Asegura que esté encima de los efectos */
+}
+
+.card-type-logo {
+    height: 25px; /* Ajusta según el tamaño de tu logo de tarjeta */
+    filter: brightness(0) invert(1); /* Para logos blancos */
+    z-index: 1;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.card-number {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px; /* Espacio entre logos y número */
+    z-index: 1;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.card-holder-info,
+.expiry-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+.value {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos específicos por tipo de tarjeta (ejemplo) */
+.visa {
+    background: linear-gradient(135deg, #0d3886, #2d559e); /* Azul más oscuro para Visa */
+}
+
+.mastercard {
+    background: linear-gradient(135deg, #d30d29, #e6522c); /* Rojo/Naranja para Mastercard */
+}
+
+/* Añade más tipos si es necesario */
