@@ -1,0 +1,95 @@
+/* src/components/CardCallout/CardCallout.css */
+
+.card-callout-container {
+    background-color: var(--white); /* Fondo blanco para la tarjeta */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px; /* Ancho similar al de la imagen */
+    margin: 40px auto; /* Centrarlo y darle margen */
+    position: relative; /* Para el fondo del personaje */
+    overflow: hidden; /* Para que el pseudo-elemento no se desborde */
+}
+
+/* Pseudo-elemento para el fondo del personaje (simulando la imagen si no hay SVG) */
+.callout-image {
+    width: 80px; /* Tamaño para el área de la imagen */
+    height: 80px;
+    min-width: 80px; /* Asegura que no se achique */
+    background-color: var(--light-green); /* Fondo verde muy claro */
+    border-radius: 50%; /* Círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Simulación de la forma del personaje si no tienes el SVG */
+.callout-image::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-green); /* Verde para la forma del personaje */
+    border-radius: 50%;
+    transform: scaleX(0.7) translateY(10px);
+    opacity: 0.5; /* Más suave */
+}
+.callout-image::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark-green); /* Verde más oscuro */
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+
+.callout-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.callout-content h3 {
+    font-size: 1.3em;
+    color: var(--primary-green); /* Título en verde */
+    margin-bottom: 5px;
+}
+
+.callout-content p {
+    font-size: 0.9em;
+    color: var(--text-dark);
+}
+
+.callout-btn {
+    background-color: var(--primary-green); /* Botón en verde */
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9em;
+}
+
+.callout-btn:hover {
+    background-color: var(--dark-green);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-callout-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+    .callout-image {
+        margin-bottom: 10px;
+    }
+}

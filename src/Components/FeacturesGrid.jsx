@@ -3,12 +3,12 @@ import React from 'react';
 import '../Styles/Features.css'; // Estilos para la cuadrícula
 
 // Importa los componentes de íconos SVG
-import SearchIcon from './icons/SearchIcon';
-import AccountsIcon from './icons/AccountsIcon';
-import LoanIcon from './icons/LoanIcon';
-import CardIcon from './icons/CardIcon';
-import InvestmentIcon from './icons/InvestmentIcon';
-import InsuranceIcon from './icons/InsuraneIcon';
+import SearchIcon from '../icons/SearchIcon';
+import AccountsIcon from '../icons/AccountsIcon';
+import LoanIcon from '../icons/LoanIcon';
+import CardIcon from '../icons/CardIcon';
+import InvestmentIcon from '../icons/InvestmentIcon';
+import InsuranceIcon from '../icons/InsuraneIcon';
 
 const FeatureItem = ({ icon: IconComponent, text }) => {
   return (
