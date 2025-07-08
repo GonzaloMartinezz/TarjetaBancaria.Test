@@ -7,17 +7,17 @@
 }
 
 .home-header {
-    background: linear-gradient(90deg, #F9F9F9 50%, #60dd86 50%); /* Fondo dividido como Galicia */
+    background: linear-gradient(90deg, #F9F9F9 50%, #60dd86 50%); 
     padding: 60px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 400px; /* Altura mínima del header */
-    gap: 40px; /* Espacio entre el texto y la tarjeta */
+    min-height: 400px;
+    gap: 40px; 
 }
 
 .header-content {
-    flex: 1; /* Ocupa la mitad del espacio */
+    flex: 1; 
     max-width: 500px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .primary-btn {
-    background-color:#60dd86; /* Naranja de Galicia */
+    background-color:#60dd86; 
     color: white;
 }
 
@@ -64,15 +64,22 @@
 }
 
 .card-display-area {
-    flex: 1; /* Ocupa la otra mitad */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.header-image-placeholder {
+    flex: 1; 
+    min-width: 300px; 
+    height: 250px; 
+    background-color: #60dd86; 
+    border-radius: 8px; 
+}
 
 
-/* Sección de características/servicios */
 .features-section {
+    background: linear-gradient(90deg, #13a88d 50%, #60dd86 50%);
     padding: 60px 40px;
     text-align: center;
     background-color: #f0f2f5;
@@ -82,6 +89,21 @@
     font-size: 2em;
     margin-bottom: 40px;
     color: #333;
+}
+
+
+.header-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+ width: 100%; /* O un tamaño fijo, según tus necesidades */
+ height: auto;
+ display: block; /* Para evitar espacios extra debajo de la imagen */
+border-radius: 0%;
 }
 
 .features-grid {
@@ -111,13 +133,12 @@
 }
 
 
-/* Pie de página básico */
 .home-footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: auto; /* Para que se fije al final si el contenido es corto */
+    margin-top: auto;
 }
 
 /* Media Queries para Responsive Design */
