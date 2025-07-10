@@ -11,8 +11,7 @@ import HomeStartPage from './pages/HomeStartPage';
 function App() {
   return (
     <div >
-      <HeroStartPage />
-    
+      <HomeStartPage />
     </div>
   );
 }

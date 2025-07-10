@@ -1,38 +1,32 @@
-/* src/components/Navbar/Navbar.css */
 .navbar {
-    background-color: var(--white); /* Blanco puro para la barra */
-    padding: 15px 40px;
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: var(--text-dark); /* Color de texto predeterminado para el navbar */
-    position: sticky; /* Para que se quede arriba al hacer scroll */
-    top: 0;
+    position: sticky;  /* Para que se quede arriba al hacer scroll */
+    top: 0; 
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 .navbar-left, .navbar-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
 }
 
 .navbar-item-link {
-    font-size: 0.95em;
-    font-weight: 500;
-    color: var(--text-light); /* Un gris más claro para los enlaces */
-    padding: 5px 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary-green); 
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.9s ease;
 }
 
 .navbar-item-link:hover {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .navbar-item-link.active {
-    color: var(--primary-green); /* Color activo para "Galicia" */
+    color: var(--primary-green); 
     font-weight: bold;
 }
 
@@ -48,17 +42,16 @@
 }
 
 .navbar-logo-text {
-    font-size: 1.2em;
+   font-size: 1.2em;
     font-weight: 700;
-    margin-left: 5px; /* Espacio entre "Tenés" y "Galicia" */
+    margin-left: 5px; 
     color: var(--primary-green); /* Color verde para el texto del logo */
 }
 
-.navbar-logo-galicia {
-    font-size: 1.2em; /* Tamaño del texto "Galicia" */
+.navbar-logo-gmtc {
     font-weight: bold;
-    color: var(--primary-green); /* Asegura que "Galicia" sea verde */
-    margin-left: 5px;
+    color: var(--primary-green); 
+    margin-left: 40px;
 }
 
 .navbar-btn {
@@ -71,7 +64,9 @@
 .navbar-btn.outline {
     background-color: transparent;
     border: 1px solid var(--border-light-grey);
-    color: var(--text-medium);
+    color: var(--white);
+    padding: 20px 50px;
+    margin-left: 90px;
 }
 
 .navbar-btn.outline:hover {
@@ -82,6 +77,7 @@
 .navbar-btn.primary {
     background-color: var(--primary-green);
     color: var(--white);
+    padding: 20px 50px;
 }
 
 .navbar-btn.primary:hover {
@@ -89,24 +85,19 @@
 }
 
 .navbar-search-btn {
-    background: none;
+    background-color: transparent;
     border: none;
-    padding: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.navbar-search-btn svg {
-    fill: var(--text-dark); /* Color de la lupa */
     transition: fill 0.3s ease;
+    margin-left: 20px;
 }
 
 .navbar-search-btn:hover svg {
     fill: var(--primary-green);
 }
 
-/* Media Queries para responsividad */
 @media (max-width: 900px) {
     .navbar-left {
         gap: 10px;
@@ -125,12 +116,12 @@
 
 @media (max-width: 768px) {
     .navbar-left {
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 8px;
     }
     .navbar-right {
-        flex-direction: column; /* Apila los botones y la lupa */
+        flex-direction: column; 
         gap: 5px;
     }
     .navbar-btn {
@@ -140,5 +131,14 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+    .navbar-item-link {
+        font-size: 0.9em;
+    }
+    .navbar-logo-text {
+        font-size: 1em;
+    }
+    .navbar-logo-gmtc {
+        margin-left: 0;
     }
 }
