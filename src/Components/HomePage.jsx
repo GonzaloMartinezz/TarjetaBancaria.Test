@@ -1,7 +1,7 @@
 import React from 'react';
 import CreditCard from '../Components/CreditCard';
 import '../Styles/HomePage.css'; 
-import imgtarjeta from '../imgs/KP001.png';
+import imgtarjeta from '../imgs/TC01.jpg';
 
 const HomePage = () => {
     return (
@@ -15,9 +15,9 @@ const HomePage = () => {
                         <button className="btn secondary-btn">Conocer propuesta</button>
                     </div>  
                 </div>
-                 <div className="header-image1" >
-                        <img src={imgtarjeta} alt="img-tarjeta" />
-                    </div>
+              <div className="header-image1" >
+                        <img className="img-tarjeta12" src={imgtarjeta} alt="img-tarjeta" />
+                    </div> 
             </header>
 
            

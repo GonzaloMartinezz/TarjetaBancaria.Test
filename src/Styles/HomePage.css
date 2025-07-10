@@ -32,9 +32,10 @@
     color: #080808;
     margin-bottom: 30px;
 }
-.header-image1{
-   width: 100%; /* O un tamaño fijo, según tus necesidades */
- /* necesito cambiar la imagen */
+
+.img-tarjeta12{
+    width: 500px;
+border-radius: 60px;
 }
 
 .header-buttons .btn {
