@@ -1,8 +1,6 @@
-/* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-    /* Colores primarios - Verde */
     --primary-green: #4CAF50; /* Un verde vibrante, puedes ajustarlo */
     --dark-green: #388E3C;   /* Un verde más oscuro para hover */
     --light-green: #C8E6C9;  /* Un verde muy claro para fondos sutiles */
@@ -27,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
-    background-color: var(--background-dark-grey); /* Fondo oscuro general como en TC5.PNG */
+    background-color: var(--background-dark-grey); 
 }
 
 a {
@@ -71,20 +69,5 @@ button {
 .btn-secondary:hover {
     background-color: var(--light-green);
     color: var(--dark-green);
-}
-
-/* Contenedor principal de la app */
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--background-dark-grey); /* Asegura que el fondo principal sea oscuro */
-}
-
-.app-container {
-    flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
 }
 

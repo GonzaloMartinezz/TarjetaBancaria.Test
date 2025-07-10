@@ -14,6 +14,9 @@ const Inicio = () => {
            <div className='contenedor-boton3 border border-1 border-light p-5 w-100' >
             <h1>Caja de Ahorros</h1>
         </div>
+         <div className='contenedor-boton4 border border-1 border-light p-5 w-100' >
+            <h2>Iniciar Sesion</h2>
+        </div>
         
     </section>
     </>

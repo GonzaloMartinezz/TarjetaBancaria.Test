@@ -10,13 +10,9 @@ import HomeStartPage from './pages/HomeStartPage';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <HeroStartPage />
-      <HomeStartPage />
-      <HeroSection />
-      <FeaturesGrid />
-      <PromotionsSection />
-      <Footer />
+    
     </div>
   );
 }

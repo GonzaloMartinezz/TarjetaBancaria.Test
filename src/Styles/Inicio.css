@@ -1,20 +1,25 @@
 section.container-botons{
-width: 60vw;
+width: 80vw;
 }
 .contenedor-boton1{
-background-color: #60dd86;
+background-color: #3ed4c0;
 color: black;
-border-radius: 50px;
+border-radius: 30px;
 }
 .contenedor-boton2{
 background-color: #339c4a;
 color: black;
-border-radius: 50px;
+border-radius: 30px;
 }
 .contenedor-boton3{
-background-color: #60dd86;
+background-color: #6ecca5;
 color: black;
-border-radius: 50px;
+border-radius: 90px;
+}
+.contenedor-boton4{
+background-color: #6ecca5;
+color: black;
+border-radius: 90px;
 }
 
 :root {
