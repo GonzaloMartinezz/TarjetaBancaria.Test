@@ -6,6 +6,7 @@ const HomeStartPage = () => {
   return (
     <div>
         <Navbar />
+        <HomePage />
     </div>
   )
 }

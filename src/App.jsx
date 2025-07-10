@@ -7,11 +7,12 @@ import './App.css';
 import PromotionsSection from './Components/PromotionsSection';
 import HeroStartPage from './pages/HeroStartPage';
 import HomeStartPage from './pages/HomeStartPage';
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
     <div >
-      <HomeStartPage />
+     <HomePage />
     </div>
   );
 }

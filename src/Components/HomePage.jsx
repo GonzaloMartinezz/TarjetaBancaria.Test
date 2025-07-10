@@ -1,25 +1,23 @@
 import React from 'react';
 import CreditCard from '../Components/CreditCard';
 import '../Styles/HomePage.css'; 
+import imgtarjeta from '../imgs/KP001.png';
 
 const HomePage = () => {
     return (
         <div className="home-page-container">
             <header className="home-header">
                 <div className="header-content">
-                    <h1>Hacete GMTC gratis</h1>
+                    <h1>Hacete GMTC</h1>
                     <p>Tenés beneficios, Tarjetas de crédito , Tarjetas de debito y Cajas de ahorro 24/7 ¡y más!</p>
                     <div className="header-buttons">
                         <button className="btn secondary-btn">Hacete GMTC</button>
                         <button className="btn secondary-btn">Conocer propuesta</button>
-                    </div>
-                    <div className="header-image-placeholder" >
-                        {/* Este div actúa como el placeholder verde para la imagen de las personas */}
-                    </div>
+                    </div>  
                 </div>
-                <div className="card-display-area">
-                 <CreditCard {...cardData} />
-                </div>
+                 <div className="header-image1" >
+                        <img src={imgtarjeta} alt="img-tarjeta" />
+                    </div>
             </header>
 
            
