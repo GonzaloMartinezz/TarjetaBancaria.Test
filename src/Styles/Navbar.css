@@ -5,6 +5,11 @@
     position: sticky;  /* Para que se quede arriba al hacer scroll */
     top: 0; 
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    border-radius: 50px;
+    border: 6px solid rgb(128, 128, 128); 
+    padding: 0 20px;
+    background-color: var(--text-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-left, .navbar-right {
@@ -49,9 +54,11 @@
 }
 
 .navbar-logo-gmtc {
-    font-weight: bold;
-    color: var(--primary-green); 
-    margin-left: 40px;
+    margin-left: 20px;
+    border: 2px solid #c08048;
+    border-radius: 50%;
+    width: 150px;
+    height: 140px;
 }
 
 .navbar-btn {
