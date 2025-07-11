@@ -8,11 +8,11 @@ const HomePage = () => {
         <div className="home-page-container">
             <header className="home-header">
                 <div className="header-content">
-                    <h1>Hacete GMTC</h1>
+                    <h2>Registrate en la nueva era de   GMTC</h2>
                     <p>Tenés beneficios, Tarjetas de crédito , Tarjetas de debito y Cajas de ahorro 24/7 ¡y más!</p>
-                    <div className="header-buttons">
-                        <button className="btn secondary-btn">Hacete GMTC</button>
-                        <button className="btn secondary-btn">Conocer propuesta</button>
+                    <div className="header-buttons d-flex flex-column gap-2">
+                        <button className="btn primary-btn">Hacete GMTC</button>
+                        <button className="btn primary-btn">Conocer propuesta</button>
                     </div>  
                 </div>
               <div className="header-image1" >
