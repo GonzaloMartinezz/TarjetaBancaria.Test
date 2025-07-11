@@ -7,7 +7,7 @@
 }
 
 .home-header {
-    background: linear-gradient(90deg, #F9F9F9 50%, #60dd86 50%); 
+    background: linear-gradient(90deg, #32639b 50%, #32639b 50%); 
     padding: 60px 40px;
     display: flex;
     justify-content: space-between;
@@ -23,14 +23,19 @@
 
 .header-content h1 {
     font-size: 3em;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .header-content p {
     font-size: 1.2em;
-    color: #555;
+    color: #080808;
     margin-bottom: 30px;
+}
+
+.img-tarjeta12{
+    width: 500px;
+border-radius: 60px;
 }
 
 .header-buttons .btn {
@@ -69,26 +74,26 @@
     justify-content: center;
     align-items: center;
 }
-.header-image-placeholder {
+.header-image{
     flex: 1; 
     min-width: 300px; 
     height: 250px; 
-    background-color: #60dd86; 
+    background-color: url('../imgs/KP001.png'); 
     border-radius: 8px; 
 }
 
 
 .features-section {
-    background: linear-gradient(90deg, #13a88d 50%, #60dd86 50%);
+    background: linear-gradient(90deg, #98c5bd 50%, #98c5bd 50%);
     padding: 60px 40px;
     text-align: center;
-    background-color: #f0f2f5;
+    background-color: #f0f5f3;
 }
 
 .features-section h2 {
     font-size: 2em;
     margin-bottom: 40px;
-    color: #333;
+    color: #000000;
 }
 
 
@@ -115,7 +120,7 @@ border-radius: 0%;
 }
 
 .feature-item {
-    background-color: #fff;
+    background-color: #39cc9b;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -128,7 +133,7 @@ border-radius: 0%;
 
 .feature-item h3 {
     font-size: 1.1em;
-    color: #666;
+    color: #000000;
     margin-top: 15px;
 }
 
