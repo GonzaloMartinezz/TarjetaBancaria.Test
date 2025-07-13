@@ -1,8 +1,7 @@
 // src/components/FeaturesGrid/FeaturesGrid.js
 import React from 'react';
-import '../Styles/Features.css'; // Estilos para la cuadrícula
+import '../Styles/FeaturesGrid.css'; // Estilos para la cuadrícula
 
-// Importa los componentes de íconos SVG
 import SearchIcon from '../icons/SearchIcon';
 import AccountsIcon from '../icons/AccountsIcon';
 import LoanIcon from '../icons/LoanIcon';
@@ -24,16 +23,16 @@ const FeatureItem = ({ icon: IconComponent, text }) => {
 const FeaturesGrid = () => {
   const features = [
     { icon: SearchIcon, text: "Buscar promociones" },
-    { icon: AccountsIcon, text: "Ir a cuentas Galicia" }, // Adaptado
+    { icon: AccountsIcon, text: "Ir a cuentas Galicia" },
     { icon: LoanIcon, text: "Pedir un préstamo" },
     { icon: CardIcon, text: "Conocer tarjetas" },
     { icon: InvestmentIcon, text: "Descubrir inversiones" },
     { icon: InsuranceIcon, text: "Sacar un seguro" },
-    { icon: null, text: "Conocer App" }, // Si no tienes icono, puedes usar null
-    { icon: null, text: "Hacete GMTC" },
-    { icon: null, text: "Sacar un seguro" }, // Repetido de la imagen
-    { icon: null, text: "Conocer Beneficios" },
-    { icon: null, text: "Conocer Propuestas" },
+    { icon:  SearchIcon, text: "Conocer App" }, 
+    { icon:  SearchIcon, text: "Hacete GMTC" },
+    { icon:  SearchIcon, text: "Sacar un seguro" }, 
+    { icon:  SearchIcon, text: "Conocer Beneficios" },
+    { icon:  SearchIcon, text: "Conocer Propuestas" },
   ];
 
   return (

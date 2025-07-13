@@ -4,7 +4,7 @@ import '../Styles/CreditCard.css'; // Estilos globales o usa el módulo CSS
 // Logos de ejemplo (puedes reemplazarlos con tus propios assets)
  import'../imgs/LOGO11.PNG'; 
  import'../imgs/LOGO12.PNG'; 
- import'../imgs/LOGO11.PNG';  
+ import '../imgs/TC01.jpg';
 
 
 const CreditCard = ({ cardNumber, cardHolder, expiryDate, cardType, bankName }) => {
