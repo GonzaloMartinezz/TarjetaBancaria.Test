@@ -15,7 +15,7 @@
 .navbar-left, .navbar-right {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
 }
 
 .navbar-item-link {

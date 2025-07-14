@@ -1,6 +1,6 @@
 // src/components/CardCallout/CardCallout.js
 import React from 'react';
-import './CardCallout.css';
+import '../Styles/CardCallout.css';
 
 // Puedes usar una imagen aquí si tienes el SVG del personaje o dejarlo en CSS
 // import characterImage from './character.svg'; 

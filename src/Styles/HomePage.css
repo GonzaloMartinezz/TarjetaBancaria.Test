@@ -8,7 +8,7 @@
 
 .home-header {
     background: linear-gradient(90deg, #32639b 50%, #32639b 50%); 
-    padding: 60px 40px;
+    padding: 100px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,8 +35,8 @@
 }
 
 .img-tarjeta12{
-    width: 900px;
-    height: 700px;
+    width: 700px;
+    height: 600px;
     margin-right: 50px;
     border-radius: 200px;
 }
@@ -89,14 +89,14 @@
 
 .features-section {
     background: linear-gradient(90deg, #98c5bd 50%, #98c5bd 50%);
-    padding: 60px 40px;
+    padding: 200px 80px;
     text-align: center;
     background-color: #f0f5f3;
 }
 
 .features-section h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
+    font-size: 3em;
+    margin-bottom: 90px;
     color: #000000;
 }
 
