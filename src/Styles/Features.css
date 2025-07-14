@@ -1,27 +1,26 @@
-/* src/components/FeaturesGrid/FeaturesGrid.css */
+/* 
 .features-section {
     padding: 60px 40px;
     text-align: center;
-    background-color: var(--background-dark-grey); /* Fondo oscuro */
+    background-color: var(--background-dark-grey); 
     width: 100%;
 }
 
 .features-section h2 {
     font-size: 2em;
     margin-bottom: 40px;
-    color: var(--white); /* Texto blanco para el título */
-}
+    color: var(--white); 
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centrar la cuadrícula */
+    margin: 0 auto; 
 }
 
 .feature-item {
-    background-color: var(--white); /* Fondo blanco para cada tarjeta */
+    background-color: var(--white); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -30,14 +29,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 120px; /* Altura fija para uniformidad */
+    height: 120px;/
 }
 
 .feature-icon-wrapper {
-    width: 48px; /* Tamaño del wrapper del icono */
+    width: 48px; 
     height: 48px;
     border-radius: 50%;
-    background-color: var(--light-green); /* Fondo verde claro para el círculo del icono */
+    background-color: var(--light-green);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +44,7 @@
 }
 
 .feature-icon-wrapper svg {
-    fill: var(--primary-green); /* Color del icono SVG */
+    fill: var(--primary-green);
     width: 24px;
     height: 24px;
 }
@@ -53,10 +52,9 @@
 .feature-item h3 {
     font-size: 1.1em;
     color: var(--text-dark);
-    margin: 0; /* Elimina margen superior por defecto */
-}
+    margin: 0; 
 
-/* Media Queries para responsividad */
+
 @media (max-width: 768px) {
     .features-section {
         padding: 40px 20px;
@@ -75,10 +73,9 @@
         font-size: 1.8em;
     }
     .features-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-    }
+        grid-template-columns: 1fr;
     .feature-item {
         height: auto;
         padding: 15px;
     }
-}
+} */

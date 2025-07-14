@@ -1,15 +1,15 @@
-
+/* 
 .features-section {
     padding: 60px 40px;
     text-align: center;
-    background-color: var(--background-dark-grey); /* Fondo oscuro */
+    background-color: var(--background-dark-grey); 
     width: 100%;
 }
 
 .features-section h2 {
     font-size: 2em;
     margin-bottom: 40px;
-    color: var(--white); /* Texto blanco para el título */
+    color: var(--white);
 }
 
 .features-grid {
@@ -17,11 +17,11 @@
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centrar la cuadrícula */
+    margin: 0 auto; 
 }
 
 .feature-item {
-    background-color: var(--background-dark-grey); /* Fondo blanco para cada tarjeta */
+    background-color: var(--background-dark-grey);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
@@ -37,7 +37,7 @@
     width: 48px; 
     height: 48px;
     border-radius: 50%;
-    background-color: var(--light-green); /* Fondo verde claro para el círculo del icono */
+    background-color: var(--light-green); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@
 }
 
 .feature-icon-wrapper svg {
-    fill: var(--primary-green); /* Color del icono SVG */
+    fill: var(--primary-green); 
     width: 24px;
     height: 24px;
 }
@@ -55,9 +55,9 @@
     color: var(--primary-green);
     margin: 0; 
 }
-
+ */
 /* Media Queries para responsividad */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .features-section {
         padding: 40px 20px;
     }
@@ -69,16 +69,15 @@
         height: 110px;
     }
 }
-
-@media (max-width: 480px) {
+ */
+/* @media (max-width: 480px) {
     .features-section h2 {
         font-size: 1.8em;
     }
     .features-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-    }
+        grid-template-columns: 1fr; 
     .feature-item {
         height: auto;
         padding: 15px;
     }
-}
+} */
